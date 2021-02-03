@@ -2,11 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LibreriaController;
-use App\Http\Controllers\HabitacionesController;
-use App\Http\Controllers\ClientesController;
-use App\Http\Controllers\FacturacionController;
-use App\Http\Controllers\ReservasController;
-use App\Http\Controllers\ConsultasController;
+use App\Http\Controllers\EditorialesController;
+use App\Http\Controllers\LibrosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,20 +26,16 @@ Route::get('libreria/mision-vision', [LibreriaController::class, 'showMision']);
 
 Route::get('libreria/ubicacion', [libreriaController::class, 'showUbicacion']);
 
-Route::get('servicios/habitaciones', [HabitacionesController::class, 'showHabitaciones']);
 
-Route::get('servicios/eventos/{id}', function ($id) {
-    return view('servicios.eventos', array('id' => $id));
-});
+Route::get('editoriales', [EditorialesController::class, 'index'])->name('listadoEditoriales');
+Route::get('editoriales/registro', [EditorialesController::class , 'formularioReg'])->name('form_registroEditorial');
+Route::post('editoriales/registro', [EditorialesController::class, 'registrar'])->name('registrarEditorial');
+Route::get('editoriales/actualizar/{id}', [EditorialesController::class, 'formularioAct'])->name('form_actualizaEditorial');
+Route::post('editoriales/actualizar/{id}', [EditorialesController::class, 'actualizar'])->name('actualizarEditorial');
+Route::get('editoriales/eliminar/{id}', [EditorialesController::class, 'eliminar'])->name('eliminarEditorial');
+Route::get('editoriales/activar/{id}', [EditorialesController::class, 'activar'])->name('activarEditorial');
+
+Route::get('Libros', [LibrosController::class, 'index'])->name('listado');
 
 
-Route::get('clientes/visualizar', [ClientesController::class, 'showClientes']);
-//consultas
-Route::get('consultas/HabitacionesSinSalida', [ConsultasController::class, 'showConsultas']);
-Route::get('consultas/CantidadHabitaciones', [ConsultasController::class, 'ConsultasCantidad']);
-// Ruta reservas
-Route::get('reservas', [ReservasController::class, 'getReservas']);
-// Ruta Facturacion
-Route::get('facturacion', [FacturacionController::class, 'getFactura']);
-// Ruta contáctos
-Route::get('contactenos', [HotelController::class, 'showContactos']);
+

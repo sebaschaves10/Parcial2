@@ -11,7 +11,7 @@
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img class="card-img-top" src="{{ url('/imagenes/5.jpg') }}" alt="Card image cap">
+                    <img class="card-img-top" src="{{ url('/imagenes/1.png') }}" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -23,7 +23,9 @@
                     <!--Title-->
                     <h4 class="card-title">Misión</h4>
                     <!--Text-->
-                    <p class="card-text">Somos una empresa privada, líder en la prestación de servicios hoteleros, orientada principalmente a los sectores comercial y empresarial, que ofrece una atención personalizada y amable con calidad, desarrollando productos y servicios que garantizan la satisfacción y las expectativas del cliente. Contamos con un talento humano comprometido, en permanente desarrollo y mejoramiento continuo, que nos permite ampliar y mantener el mercado brindando total seguridad a empleados, clientes, proveedores, socios y comunidad en general.</p>
+                    <p class="card-text">Trama es una empresa dedicada a la venta de libros. Abrimos en el año 1997 y desde el primer momento tuvimos claro que en Lugo había espacio para una librería de fondo; un lugar en el que el lector pudiese buscar y, sobre todo, encontrar esos libros que deben estar en las estanterías. Además en nuestra intención está hacer la vida más agradable a las personas que entran en Trama, tratando de atenderlas lo mejor posible y de darles el mejor servicio.
+
+                        La librería está ubicada muy cerca de la Muralla romana de Lugo, en el número 21 de la Avenida de A Coruña, dentro de unas galerías comerciales; estamos algo escondidos pero así acercarse hasta aquí tiene su aquel.</p>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 
                 </div>
@@ -36,7 +38,7 @@
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img class="card-img-top" src="{{ url('/imagenes/6.jpg') }}" height="320" alt="Card image cap">
+                    <img class="card-img-top" src="{{ url('/imagenes/2.jpg') }}" height="320" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
                     </a>
@@ -48,7 +50,7 @@
                     <!--Title-->
                     <h4 class="card-title">Visión</h4>
                     <!--Text-->
-                    <p class="card-text">Ser en el año 2021 el hotel más reconocido en Pasto, tanto por su infraestructura como sus servicios. Brindando atención de excelente calidad, con unas instalaciones modernas dirigidas a clientes del sector comercial y empresarial que visitan la ciudad, contando con una alta ocupación a nivel nacional e internacional</p>
+                    <p class="card-text">Nuestro proyecto busca consolidarse como una librería de referencia en Lugo y, desde aquí, abrirnos al resto del mundo aprovechando las herramientas de las que disponemos (redes sociales, página web, etc…). En el futuro queremos seguir realizando las mismas actividades culturales alrededor del libro que hasta ahora y ampliarlas con otras como clubes de lectura, talleres, etc.</p>
                     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 
                 </div>

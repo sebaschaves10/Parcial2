@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePrecioTable extends Migration
+class CreateEditorialesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreatePrecioTable extends Migration
      */
     public function up()
     {
-        Schema::create('precio', function (Blueprint $table) {
+        Schema::create('editoriales', function (Blueprint $table) {
             $table->integer('id')->autoIncrement();
-            $table->string('Tipo', 10);
-            $table->integer('precio');
+            $table->string('nombreEditorial',50);
+            $table->string('direccion',255);
+            $table->string('ciudad',50);
+            $table->string('telefono',10);
+
             $table->timestamps();
         });
     }
@@ -28,6 +31,8 @@ class CreatePrecioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('precio');
+        Schema::table('editoriales', function (Blueprint $table) {
+            //
+        });
     }
 }

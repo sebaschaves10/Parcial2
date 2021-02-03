@@ -3,9 +3,9 @@
 @section('content')
 
 
-<body background="{{url('img/fondo.jpg')}}">
+<body background="{{url('imgenes/fondo.jpg')}}">
     <div class="container" align="center">
-        <h1 style="color: white"> LIBRERIA NACIONAL </h1>
+        <h1 style="color: black"> LIBRERIA NACIONAL </h1>
         
 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -16,30 +16,24 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{url('img/3.jpg')}}" class="d-block w-100" alt="..." height="500">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1> &#x2655;</h1>
-                        <p>
-                        <h4>Danos el gusto de atenderte</h4>
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
                     <img src="{{url('img/2.jpg')}}" class="d-block w-100" alt="..." height="500">
                     <div class="carousel-caption d-none d-md-block">
                         <h1> &#x2655;</h1>
-                        <p>
-                        <h4>Simplemente relajante</h4>
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url('img/1.jpg')}}" class="d-block w-100" alt="..." height="500">
+                    <img src="{{url('img/3.jpg')}}" class="d-block w-100" alt="..." height="500">
                     <div class="carousel-caption d-none d-md-block">
                         <h1> &#x2655;</h1>
-                        <p>
-                        <h4>Sienteté como en casa</h4>
-                        </p>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url('img/4.jpg')}}" class="d-block w-100" alt="..." height="500">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1> &#x2655;</h1>
+                        
                     </div>
                 </div>
             </div>
