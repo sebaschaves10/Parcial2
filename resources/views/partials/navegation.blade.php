@@ -20,7 +20,6 @@
                 <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
                     <a class="dropdown-item" href="{{url('/libreria/historia')}}">Historia</a>
                     <a class="dropdown-item" href="{{url('/libreria/mision-vision')}}">Misión y Visión</a>
-                    <a class="dropdown-item" href="{{url('/libreria/ubicacion')}}">Ubicación</a>
                 </div>
             </li>
 

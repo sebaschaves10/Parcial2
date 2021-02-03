@@ -26,7 +26,6 @@ Route::get('libreria/mision-vision', [LibreriaController::class, 'showMision']);
 
 Route::get('libreria/ubicacion', [libreriaController::class, 'showUbicacion']);
 
-
 Route::get('editoriales', [EditorialesController::class, 'index'])->name('listadoEditoriales');
 Route::get('editoriales/registro', [EditorialesController::class , 'formularioReg'])->name('form_registroEditorial');
 Route::post('editoriales/registro', [EditorialesController::class, 'registrar'])->name('registrarEditorial');
@@ -35,7 +34,7 @@ Route::post('editoriales/actualizar/{id}', [EditorialesController::class, 'actua
 Route::get('editoriales/eliminar/{id}', [EditorialesController::class, 'eliminar'])->name('eliminarEditorial');
 Route::get('editoriales/activar/{id}', [EditorialesController::class, 'activar'])->name('activarEditorial');
 
-Route::get('Libros', [LibrosController::class, 'index'])->name('listado');
+Route::get('libros', [LibrosController::class, 'index'])->name('listado');
 
 
 

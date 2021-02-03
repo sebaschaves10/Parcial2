@@ -1,26 +1,6 @@
 @extends('layout.master')
 @section('content')
-<script type="text/javascript">
-    function activarEdi() {
-        var respuesta = confirm("Desea activar la categoria??");
-        if (respuesta == true) {
-            return true;
-        } else {
-            return false;
-        }
 
-    }
-
-    function desactivarEdi() {
-        var respuesta = confirm("Desea desactivar la categoria??");
-        if (respuesta == true) {
-            return true;
-        } else {
-            return false;
-        }
-
-    }
-</script>
 
 <body>
     <div class="row">
@@ -32,49 +12,43 @@
 
                     <div class="form-row mb-4">
                         <div class="col">
-                            <h2 class="box-title">Editoriales
-                                <a href="{{ url('/editoriales/registro') }}" class="btn btn-success"> <i class="fa fa-plus-circle"></i> Nuevo </a>
+                            <h2 class="box-title">Listado de Editoriales
+                                <br>
+                                <a href="{{ url('/editoriales/registro') }}" class="btn btn-success"> <i class="fa fa-plus-circle"></i> Registrar </a>
                             </h2>
-                        </div>
-                        <div class="col"> </div>
-                        <div class="col"></div>
+                        </div>         
                     </div>
                 </header>
 
                 <div class="main-box-body clearfix">
                     <div class="table-responsive">
                         <table class="table" align="center">
-                            <thead class="black white-text">
+                            <thead class="blue white-text">
                                 <tr>
-                                    <th>Op</th>
+
                                     <th>#</th>
                                     <th>Nombre</th>
                                     <th>Direccion</th>
                                     <th>Ciudad</th>
                                     <th>Telefono</th>
+                                    <th>Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($editoriales as $c)
                                 <tr>
 
-                                    <td>
-                                       
-                                        <a href="{{route('form_actualizaEditorial', $c->id)}}" class="btn btn-warning"><i>Actu</i></a>
-                                        
-                                    </td>
+
                                     <td> {{ $c->id }} </td>
                                     <td> {{ $c->nombreEditorial }} </td>
                                     <td> {{ $c->direccion }} </td>
                                     <td> {{ $c->ciudad }} </td>
                                     <td> {{ $c->telefono }} </td>
-
                                     <td>
-                                        @if($c->estado==1)
-                                        <span class="label bg-primary">Disponible</span>
-                                        @else
-                                        <span class="label bg-warning">Pocas unidades</span>
-                                        @endif
+                                        <a href="{{route('form_actualizaEditorial', $c->id)}}" class="btn btn-warning"><i>Actualizar</i></a>
+                                    </td>
+
+
 
                                 </tr>
                                 @endforeach

@@ -33,7 +33,7 @@
     <div class="container-fluid text-center text-md-left">
         <div class="row">
             <div class="col-md-6 mt-md-0 mt-3">
-                <h5 class="text-uppercase">BookStore</h5>
+                <h5 class="text">Libreria Nacional</h5>
             </div>
             <hr class="clearfix w-100 d-md-none pb-3">
             <div class="col-md-3 mb-md-0 mb-3">
@@ -47,7 +47,8 @@
                         <a href="#!">WhatsApp: 310 389 56 09</a>
                     </li>
                     <li>
-                        <a href="#!">Presentado por: Sebastian Chaves</a>
+                        <a href="#!">Presentado por: Sebastian Chaves</a><br>
+                        <a href="#!">Parcial B</a>
                     </li>
 
                 </ul>

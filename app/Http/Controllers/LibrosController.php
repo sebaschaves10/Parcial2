@@ -9,17 +9,19 @@ use App\Models\Libro;
 use App\Models\Editorial;
 
 
-class ProductosController extends Controller
+class LibrosController extends Controller
+
+
 {
     //
-    public function listado()
+    public function index()
     {
         $libros = DB::table('libros as lib')
-            ->join('editoriales as edi', 'lib.editoriales', '=', 'edi.id')
-            ->select('lib.id', 'lib.precio', 'lib.cantidad', 'lib.nombreProducto', 'lib.foto', 'edi.nombreEditorial', 'lib.editorial', 'lib.estado')
+            ->join('editoriales as edi', 'lib.editorial', '=', 'edi.id')
+            ->select('lib.id', 'lib.isbn', 'lib.nombreLibro', 'lib.stock', 'lib.precio', 'edi.nombreEditorial')
             ->orderby('lib.id', 'asc')
             ->get();
-        return view('libro.listadoLibros', ['libros' => $libros]);
+        return view('libro.listado', ['editoriales' => $libros]);
     }
 
 
