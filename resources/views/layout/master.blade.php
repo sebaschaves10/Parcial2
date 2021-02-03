@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hotel la Rivera</title>
+    <title>Libreria Nacional</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -33,7 +33,7 @@
     <div class="container-fluid text-center text-md-left">
         <div class="row">
             <div class="col-md-6 mt-md-0 mt-3">
-                <h5 class="text-uppercase">Hotel la Rivera</h5>
+                <h5 class="text-uppercase">BookStore</h5>
             </div>
             <hr class="clearfix w-100 d-md-none pb-3">
             <div class="col-md-3 mb-md-0 mb-3">
@@ -57,7 +57,7 @@
     </div>
 
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> Hotel La Rivera</a>
+        <a href="https://mdbootstrap.com/"> LIBRERIA NACIONAL </a>
     </div>
     <!-- Copyright -->
 

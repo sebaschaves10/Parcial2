@@ -5,8 +5,8 @@
 
 <body background="{{url('img/fondo.jpg')}}">
     <div class="container" align="center">
-        <h1 style="color: white"> ¡BIENVENIDOS AL HOTEL LA RIVIERA! </h1>
-        <h5 style="color: white;"><br>La mejor manera de encontrarte a ti mismo es perderte en el servicio a los demás</h5>
+        <h1 style="color: white"> LIBRERIA NACIONAL </h1>
+        
 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -54,7 +54,7 @@
         </div>
 
         <br><br>
-        <img src="{{url('img/corona.png')}}" height="100">
+    
 
         <br><br>
     </div>

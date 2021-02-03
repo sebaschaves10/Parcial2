@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HotelController extends Controller
+class LibreriaController extends Controller
 {
     //
     public function getIndex()
@@ -13,15 +13,15 @@ class HotelController extends Controller
     }
     public function showHistoria()
     {
-        return view('hotel.historia');
+        return view('libreria.historia');
     }
     public function showMision()
     {
-        return view('hotel.vision');;
+        return view('libreria.vision');;
     }
     public function showUbicacion()
     {
-        return view('hotel.ubicacion');;
+        return view('libreria.ubicacion');;
     }
 
     public function showContactos()
