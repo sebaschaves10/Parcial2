@@ -47,7 +47,7 @@
                                     <td> {{ $c->nombreLibro }} </td>
                                     <td> {{ $c->stock }} </td>
                                     @if($c->stock==0)
-                                    <td> agotado </td>
+                                    <td> Agotado </td>
                                     @else
                                     @if($c->stock<=1 || $c->stock<=10) <td> Ultimas Unidades </td>
                                             @else
